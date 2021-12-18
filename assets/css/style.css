@@ -1,0 +1,403 @@
+@import url(https://fonts.googleapis.com/css?family=Cairo);
+
+* {
+  font-family: 'Cairo';
+  word-spacing: 1px;
+}
+html, body, footer{
+  display: flex;
+  flex-direction: column; /* creates rows out of the elements main and footer */
+  height: 100vh;
+  margin:0;
+}
+a.login{
+  background-color: #216051;
+  color: #ffffff;
+  border: 1px solid #707070;
+}
+a.login:hover{
+  color: #216051;
+  background-color: #ffffff;
+}
+.carousel-caption{
+  right: 5% !important;
+  top: 100px;
+}
+.carousel-indicators li{
+  border-top: unset !important;
+  border-bottom:unset !important;
+  border-radius: 50%;
+  width: 7px !important;
+  height: 7px !important;
+  border: 2px solid #216051;
+  background-color: #ffffff !important;
+  opacity: unset;
+}
+.carousel-indicators li.active{
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: -1px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: #216051 !important;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  .carousel-item.carousel-caption p.w-lg-75{
+    display: none !important;
+  }
+}
+/*** talent section ****/
+.talent_item{
+  background: linear-gradient(#abffeb, #F8FFFD);
+  border-radius: 8px;
+  margin-left: 40px;
+}
+hr.underline{
+  width: 90px;
+  float: right;
+  background-image: linear-gradient(100deg, #D5FFF5, #216051);
+  border: 0;
+  height: 2px;
+}
+.icons{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  padding-right: 0;
+}
+.most_talent span{
+  padding-right: 10px;
+}
+.first_img{
+  position: relative;
+}
+.a1overlay, .a2overlay, .a3overlay, .a4overlay, .b1overlay, .b2overlay, .b3overlay,.b4overlay, .c1overlay, .c2overlay, .c3overlay, .c4overlay, .d1overlay, .d2overlay, .d3overlay, .d4overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 90%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  align-items: end;
+}
+.type{
+  color: #D5FFF5;
+}
+.a1:hover .a1overlay{
+  opacity: 1 !important;
+}
+.a2:hover .a2overlay{
+  opacity: 1 !important;
+}
+.a3:hover .a3overlay{
+  opacity: 1 !important;
+}
+.a4:hover .a4overlay{
+  opacity: 1 !important;
+}
+.b1:hover .b1overlay{
+  opacity: 1 !important;
+}
+.b2:hover .b2overlay{
+  opacity: 1 !important;
+}
+.b3:hover .b3overlay{
+  opacity: 1 !important;
+}
+.b4:hover .b4overlay{
+  opacity: 1 !important;
+}
+.c1:hover .c1overlay{
+  opacity: 1 !important;
+}
+.c2:hover .c2overlay{
+  opacity: 1 !important;
+}
+.c3:hover .c3overlay{
+  opacity: 1 !important;
+}
+.c4:hover .c4overlay{
+  opacity: 1 !important;
+}
+.d1:hover .d1overlay{
+  opacity: 1 !important;
+}
+.d2:hover .d2overlay{
+  opacity: 1 !important;
+}
+.d3:hover .d3overlay{
+  opacity: 1 !important;
+}
+.d4:hover .d4overlay{
+  opacity: 1 !important;
+}
+
+.footer{
+  background: #216051;
+  padding: 5%;
+  color: white;
+}
+.footer p, .footer div{
+  margin: 0 auto;
+}
+.left{
+  text-align:left;
+  float:left;
+}
+.right a{
+  color: white;
+  font-size: 24px;
+}
+.right {
+  float: right;
+  text-align: right;
+}
+.describe{
+  font-size: 16px;
+}
+.right{
+  max-width: 450px;
+}
+.right .input-group input[type=text] {
+  position: relative;
+  border-radius: 8px;
+  max-width: 450px;
+}
+.right .input-group input[type=text]::placeholder{
+  padding: 0px 20%;
+}
+.right button{
+  position: absolute;
+  left: 0;
+  border-radius: 8px;
+  z-index: 999;
+  background: #D5FFF5;
+  width: 172px;
+}
+
+.centered{
+  text-align:center;
+}
+.footer p{
+  color: white;
+}
+.social_icons a{
+  background: white;
+  border-radius: 50%;
+  line-height: 1;
+  text-align: center;
+}
+.social_icons a i{
+  color: #216051;
+  padding: 5px 7px;
+}
+i.fab.fa-facebook-f {
+  padding: 5px 10px;
+}
+.permenant_link li, .footer_menu li{
+  list-style: none;
+  list-style-image: url('../img/Path 9.png');
+  color: white;
+  padding: 10px;
+}
+.permenant_link li a, .footer_menu li a{
+  text-decoration: none;
+  color: white;
+  text-align: right;
+}
+@media screen and (max-width: 366px){
+  .right .input-group input[type=text]::placeholder{
+    padding: 0px 10%;
+  }
+}
+/*** login index ***/
+.dropdown-menu a i{
+  color: #979797;
+}
+/*** researcher profile ****/
+.join{
+  color: #BCBCBC;
+}
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background: white;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom: 3px solid #216051;
+}
+
+/* Create an active/current tablink class */
+.tab button.active{
+  border-bottom: 3px solid #216051;
+}
+
+/* Style the tab content */
+.tabcontent {
+  text-align: right;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tabcontent a{
+  color: #216051;
+}
+.tabcontent a:hover, .tabcontent a:active{
+  color: #216051;
+}
+.contract_item, .offer_item{
+  background: #e5e5e545;
+  margin: 10px;
+  padding: 20px;
+}
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover{
+  background-color: lightgrey;
+}
+#notification_menu{
+  font-size: 30px;
+}
+#notification_menu:after{
+  display: none;
+}
+.talent_cat{
+  color: #216051;
+}
+.edit{
+  color: white;
+  background: #216051;
+  border-radius: 8px;
+  padding: 5px 15px;
+}
+.edit:hover{
+  color: #216051;
+  background: white;
+  border: 1px solid #216051;
+  border-radius: 8px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.details_item{
+  width: 130px;
+  height: 90px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  margin: 10px;
+}
+.edit_details input[type=submit], .edit_profile_info input[type= submit]{
+  background: #216051;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+.profile_img{
+  position: relative;
+}
+.edit_img{
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  color: white;
+  background: #216051;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+#city{
+  background-color: white;
+  color: #09182D;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 100%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.mobile, #balance{
+  position: relative;
+}
+.mobile-code, .currency{
+  padding: 8px 15px;
+  position: absolute;
+  top: 0;
+  border-left: 1px solid;
+  height: auto;
+  border-left: 1px solid #eaeaea;
+  margin: 0 auto;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.profile_img_div{
+  height: fit-content;
+}
+.offer_item h4 i{
+  color: #BCBCBC;
+}
+.accept, .reject, .accept:hover, .reject:hover, .accept:active, .reject:active{
+  color: white !important;
+  width: 100px !important;
+}
+.accept{
+  background: #216051;
+}
+.reject{
+  background: #C93F25;
+}
+.reject_reason{
+  height: 120px;
+  border-radius: 8px;
+  border-color: lightgrey;
+}
+#category_menu{
+  cursor: pointer;
+}
+.notifications_item:hover{
+  background: #2160511f;
+}
+.contract_details a, .contract_details a:hover, .contract_details a:active{
+  color: #216051;
+}
+.card{
+  border-radius: 25px;
+}
+#other_details{
+  height: 100px;
+}
+.offer_sent, .offer_sent:hover{
+  color: #216051;
+}
+.most_talent a, .most_talent a:hover, .most_talent a:active, .fav_artist a, .fav_artist a:hover, .fav_artist a:active,
+.fav_guitar a, .fav_guitar a:hover, .fav_guitar a:active, .fav_writing a, .fav_writing a:hover, .fav_writing a:active{
+  color: unset;
+  text-decoration: none;
+}
