@@ -11,34 +11,32 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 $( document ).ready(function() {
     $('.owl-carousel').owlCarousel({
-        rtl:true,
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1,
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
                 nav: true
             },
-            600:{
-                items:3,
+            600: {
+                items: 3,
                 nav: true
             },
-            1000:{
-                items:5,
+            1000: {
+                items: 4,
                 nav: true
             },
-            1200:{
-                items:6,
+            1200: {
+                items: 4,
                 nav: true
             }
         }
     });
-    $('.edit_img').on('click', function (){
-        $('#image').click();
-    })
 });
 $(document).ready(function(){
 
@@ -173,6 +171,3 @@ $(document).ready(function(){
         return false;
     })
 });
-
-
-

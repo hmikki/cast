@@ -54,7 +54,14 @@ a.login:hover{
 .talent_item{
   background: linear-gradient(#abffeb, #F8FFFD);
   border-radius: 8px;
-  margin-left: 40px;
+  width: 138px;
+  height: 138px;
+  justify-items: center;
+  padding: 25px;
+}
+.talent_item img{
+  width: 60px;
+  height: 60px;
 }
 hr.underline{
   width: 90px;
@@ -83,7 +90,7 @@ hr.underline{
   color: #f1f1f1;
   width: 90%;
   transition: .5s ease;
-  opacity:0;
+    opacity:0;
   color: white;
   border-radius: 8px;
   font-size: 20px;
@@ -381,7 +388,7 @@ i.fab.fa-facebook-f {
 #category_menu{
   cursor: pointer;
 }
-.notifications_item:hover{
+.notifications_item.active{
   background: #2160511f;
 }
 .contract_details a, .contract_details a:hover, .contract_details a:active{

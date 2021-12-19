@@ -47,62 +47,114 @@
 <div class="container">
     <div class="wrapper fadeInDown">
         <div id="formContent">
+            <h2 class="text-right">تسجيل جديد</h2>
+            <p class="text-right mb-5"> هل لديك حساب؟ <a href="login.html">تسجيل الدخول</a> </p>
+            <div class="row">
 
-            <!-- Login Form -->
-            <form>
+                <div class="user_type tablinks m-2 pt-3" onclick="$('.user_type').removeClass('active');$(this).addClass('active'); openTab(event, 'talent_user')">
+                    <img src="assets/img/icons8-skill.png">
+                    <p class="pt-4">موهوب</p>
+                </div>
+                <div class="user_type tablinks m-2 pt-3" onclick="$('.user_type').removeClass('active');$(this).addClass('active'); openTab(event, 'manager_user')">
+                    <img src="assets/img/icons8-manager.png">
+                    <p class="pt-4">باحث عن موهوب</p>
+                </div>
+            </div>
+            <div id="talent_user" class="tabcontent" style="display: block">
+                <!-- Login Form -->
+                <form action="login.html">
 
-                <h2 class="text-right pr-5 pt-5 mr-5">تسجيل جديد</h2>
-                <p class="text-right pr-5 mr-5 mb-5"> هل لديك حساب؟ <a href="#">تسجيل الدخول</a> </p>
-                <div class="row pr-5 mr-5">
-
-                    <div class="user_type m-2 pt-3" onclick="$('.user_type').removeClass('active');$(this).addClass('active')">
-                        <img src="assets/img/icons8-skill.png">
-                        <p class="pt-4">موهوب</p>
+                    <div class="form-group">
+                        <label for="name" class="float-right fadeIn second col-12">*الاسم رباعي</label>
+                        <input type="text" id="name" class="text-right fadeIn second" name="name" placeholder="أدخل اسمك رباعي">
                     </div>
-                    <div class="user_type m-2 pt-3" onclick="$('.user_type').removeClass('active');$(this).addClass('active')">
-                        <img src="assets/img/icons8-manager.png">
-                        <p class="pt-4">باحث عن موهوب</p>
+                    <div class="form-group">
+                        <label for="email" class="float-right fadeIn second col-12">*البريد الالكتروني</label>
+                        <input type="text" id="email" class="text-right fadeIn second" name="email" placeholder="أدخل البريد الالكتروني">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="name" class="float-right fadeIn second pr-5 mr-5">*الاسم رباعي</label>
-                    <input type="text" id="name" class="text-right fadeIn second" name="name" placeholder="أدخل اسمك رباعي">
-                </div>
-                <div class="form-group">
-                    <label for="email" class="float-right fadeIn second pr-5 mr-5">البريد الالكتروني</label>
-                    <input type="text" id="email" class="text-right fadeIn second" name="email" placeholder="أدخل البريد الالكتروني">
-                </div>
-                <div class="row">
-                    <div class="form-group col-6 pr-5">
-                        <label for="password" class="float-right fadeIn third pr-5">*كلمة المرور</label>
-                        <input type="text" id="password" class="text-right fadeIn third" name="password" placeholder="أدخل كلمة المرور الخاصة بك">
-                    </div>
-                    <div class="form-group col-6 pl-5">
-                        <label for="confirm_password" class="float-right fadeIn third pr-5">*تأكيد كلمة المرور</label>
-                        <input type="text" id="confirm_password" class="text-right fadeIn third" name="confirm_password" placeholder="أدخل كلمة المرور الخاصة بك">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-6 pr-5">
-                        <label for="city" class="float-right fadeIn third pr-5">*المدينة</label>
-                        <select id="city" class="text-right fadeIn third">
-                            <option value="">الرياض</option>
-                            <option value="">السعودية</option>
-                            <option value="">جدة</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-6 pl-5">
-                        <label for="mobile" class="float-right fadeIn third pr-5">*رقم المحمول</label>
-                        <div class="input-group pr-5">
-                        <input type="text" id="mobile" class="text-center fadeIn third" name="mobile" placeholder="أدخل رقم الهاتف">
-                        <span class="mobile-code">+004</span>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="password" class="fadeIn third col-12">*كلمة المرور</label>
+                            <input type="password" id="password" class="text-right fadeIn third" name="password" placeholder="أدخل كلمة المرور الخاصة بك">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="confirm_password" class="fadeIn third col-12">*تأكيد كلمة المرور</label>
+                            <input type="password" id="confirm_password" class="text-right fadeIn third" name="confirm_password" placeholder="أدخل كلمة المرور الخاصة بك">
                         </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="city" class="float-right fadeIn third col-12">*المدينة</label>
+                            <select id="city" class="text-right fadeIn third">
+                                <option value="">الرياض</option>
+                                <option value="">السعودية</option>
+                                <option value="">جدة</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="mobile" class="float-right fadeIn third col-12">*رقم المحمول</label>
+                            <div class="input-group">
+                                <input type="text" id="mobile" class="text-center fadeIn third" name="mobile" placeholder="أدخل رقم الهاتف">
+                                <span class="mobile-code">+004</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <input type="submit" class="fadeIn fourth register font-weight-bold" value="تسجيل الدخول">
-            </form>
-
+                    <input type="submit" class="fadeIn fourth register font-weight-bold" value="تسجيل الدخول">
+                </form>
+            </div >
+            <div id="manager_user" class="tabcontent">
+                <form action="login.html" method="">
+                    <div class="row">
+                        <div class="col-6 form-group fadeIn first">
+                            <label for="username">*الاسم</label>
+                            <input type="text" name="username" id="username" class="username fadeIn first">
+                        </div>
+                        <div class="col-6 form-group fadeIn first">
+                            <label for="company_name">*اسم الشركة</label>
+                            <input type="text" name="company_name" id="company_name" class="company_name fadeIn first">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group fadeIn second">
+                            <label for="company_password">*كلمة المرور</label>
+                            <input type="password" name="company_password" id="company_password" class="company_password">
+                        </div>
+                        <div class="col-6 form-group fadeIn second">
+                            <label for="company_email">*اسم الشركة</label>
+                            <input type="text" name="company_email" id="company_email" class="company_email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group fadeIn second">
+                            <label for="commercial_register">*السجل التجاري</label>
+                            <input type="text" name="commercial_register" id="commercial_register" class="commercial_register">
+                        </div>
+                        <div class="col-6 form-group fadeIn second">
+                            <label for="tax_number">*الرقم الضريبي</label>
+                            <input type="text" name="tax_number" id="tax_number" class="tax_number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="company_city" class="float-right fadeIn third col-12">*المدينة</label>
+                            <select id="company_city" class="text-right fadeIn third">
+                                <option value="">الرياض</option>
+                                <option value="">السعودية</option>
+                                <option value="">جدة</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="company_mobile" class="float-right fadeIn third col-12">*رقم المحمول</label>
+                            <div class="input-group">
+                                <input type="text" id="company_mobile" class="text-center fadeIn third" name="mobile" placeholder="أدخل رقم الهاتف">
+                                <span class="mobile-code">+004</span>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="fadeIn fourth register font-weight-bold" value="تسجيل الدخول">
+                </form>
+            </div>
         </div>
     </div>
 </div>

@@ -53,13 +53,13 @@ input[type=button], input[type=submit], input[type=reset]  {
     font-size: 13px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    margin: 100px 20px 40px 20px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    width: 80%;
+    width: 100%;
+    margin-top: 100px;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -70,7 +70,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
     transform: scale(0.95);
 }
 
-input[type=text], select {
+input[type=text], input[type=password], select {
     background-color: white;
     border: none;
     color: #09182D;
@@ -79,8 +79,8 @@ input[type=text], select {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
-    width: 85%;
+    height: 60px;
+    width: 100%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -94,7 +94,9 @@ select{
     padding: 10px 32px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus {
+    border: none;
+    box-shadow: none;
     background-color: #fff;
     border-bottom: 2px solid #216051;
 }
@@ -218,8 +220,14 @@ input[type=text]::placeholder {
 #icon {
     width:60%;
 }
-form a, form a:hover{
+form a, form a:hover, form a:active{
     color: #216051;
+}
+#formContent a, #formContent a:hover, #formContent a:active{
+    color: #216051;
+}
+#formContent{
+    padding: 60px 100px !important;
 }
 .user_type{
     background: none;
@@ -250,7 +258,6 @@ form a, form a:hover{
 }
 .reset{
     margin-bottom: 10px !important;
-    width: 82% !important;
 }
 .register{
     margin-top: 20px !important;
